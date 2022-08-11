@@ -1,0 +1,117 @@
+body{
+	font-family:"Cousine", monospace;
+	margin:0;
+}
+div{
+	color:#000105;
+	text-align:center;
+}
+h1{
+	font-weight:bold;
+	font-size:6rem;
+	font-family: 'Major Mono Display', monospace;
+}
+h2{
+	color:#380c29;
+	font-size:2rem;
+	font-family: 'Major Mono Display', monospace;
+}
+h3{
+	font-size:1.3rem;
+	font-family: 'Major Mono Display', monospace;
+}
+p{
+	margin:0;
+	padding-bottom:0;
+}
+hr{
+	border:none;
+	border-top:7px dotted #380c29;
+	width:2%;
+}
+a{
+	font-family:"Cousine",monospace;
+	color:#380c29;
+	text-decoration:none;
+
+}
+a:hover{
+	color:#fff5d6;
+}
+.profile{
+	padding:50px;
+}
+.contact-me{
+	padding:100px;
+}
+.footer-link{
+	position:relative;
+	top:5px;
+	padding-top:100px;
+	margin:auto 4% auto 4%;
+}
+.bottom-container{
+	padding:50px;
+	background-color:#ecb2b7;
+	height:80px;
+}
+.copyright{position:relative;top:30px;}
+.top-container{
+	
+	background-color:#ecb2b7;
+	top:0;
+	left:0;
+	height:500px;
+	position:relative;
+}
+
+.name{
+	margin:0px 0px 0px 0px;
+	position:relative;
+	right:30%;
+}
+#hi{
+	position:relative;
+	right:40%;
+	margin:0px 0px 0px 0px;
+	padding:20px 0px 0px 0px;
+}
+#fullstack{
+	position:relative;
+	right:25%;
+	margin:0px 0px 0px 0px;
+	padding:20px 0px 0px 0px;
+
+}
+.inner{
+	position:relative;
+	top:150px;
+	margin:auto 100px auto 100px;
+}
+.overlined{
+	text-decoration:overline;
+}
+.youtube-vid{
+	margin:30px;
+	height:25%;
+	width:25%;
+	float:left;
+	background-color:#000105;
+}
+.skills{
+	padding:50px;
+}
+.skill-row{
+	line-height:2;
+	margin:200px auto 200px auto;
+	text-align:left;
+	width:50%;
+}
+.cs50{
+	padding:30px;
+	width:25.5%;
+	height:25.5%;
+	float:right;
+}
+.sdesc{
+}

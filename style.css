@@ -1,0 +1,167 @@
+body{
+	color:#ebe6e3;
+	width:100vw;
+	max-width:100%;
+	height:100%;
+	background-color:black;
+}
+.border{
+	z-index:-1;
+	width:100vw;
+	height:100vh;
+	position:absolute;
+	background-size:100% 100%;
+	background-image:url("img/border.png")
+}
+.desktop{
+	background-image:url("https://media.giphy.com/media/26n6Eex4vlFwgVaRa/giphy.gif");
+	background-size:cover;
+	height:100vh;
+	background-color:black;
+	width:88vw;
+	height:90vh;
+	position:absolute;
+	left:6vw;
+	top:5vh;
+	display:block;
+}
+.window{
+	border-style:solid;
+	border-width:2px;
+	border-color:white;
+	display:none;
+	position:absolute;
+	width:60vw;
+	height:50vh;
+	background:black;
+}
+.headers{
+	width:60vw;
+	height:5vh;
+	cursor:move;
+}
+#about{
+	left:20vw;
+	top:10vh;
+}
+#port{
+	left:25vw;
+	top:15vh;
+}
+#service{
+	left:30vw;
+	top:20vh;
+}
+#contact{
+	left:35vw;
+	top:25vh;
+}
+
+#aboutheader{
+	background-color:#8941AD;
+}
+#portheader{
+	background-color:#cc5446;
+
+}
+#serviceheader{
+	background-color:#fef3d7;
+
+}
+#contactheader{
+	background-color:#ebe6e3;
+
+}
+.icon{
+	width:5vw;
+	cursor:move;
+}
+.filename{
+	width:5vw;
+	aspect-ratio:3;
+}
+.row{
+	transform:translate(1vw,0%);
+	height:85vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:baseline;
+}
+.taskbar{
+	background-color:#ebe6e3;
+	opacity:0.5;
+	height:5vh;
+}
+.app{
+	text-align:center;
+	display:block;
+	width:5vw;
+	aspect-ratio:2/3;
+}
+/* Loading screen */
+.backvid{
+        position:absolute;
+        z-index:0;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+        min-width:100%;
+        min-height:100%;
+        width:auto;
+        height:auto;
+        object-fit:cover;
+
+
+}
+
+@media (min-aspect-ratio:16/9){
+        .backvid{
+                width:100%;
+                height:auto;
+        }
+}
+@media (max-aspect-ratio:16/9){
+        .backvid{
+                width:auto;
+                height:100%;
+        }
+}
+.intro{
+        position:absolute;
+        z-index:11;
+        left:0;
+        top:0;
+        width:100%;
+        height:100vh;
+        background-color:black;
+        transition:1s;
+        overflow:hidden;
+}
+
+.name-header{
+        position:absolute;
+        top:40%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        color:white;
+}
+.name{
+        position:relative;
+        display:inline-block;
+        bottom:-20px;
+        opacity:0;
+
+}
+
+.name.active{
+        bottom:0;
+        opacity:1;
+        transition:ease-in-out 0.5s;
+}
+
+.name.fade{
+        bottom:150px;
+        opacity:0;
+        transition: ease-in-out 0.5s;
+}

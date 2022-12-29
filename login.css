@@ -1,0 +1,100 @@
+body{
+        width:100vw; 
+        max-width:100%; 
+        height:100%; 
+        background-color:black; 
+}
+.border{
+        width:100vw;
+        height:100vh;
+        position:absolute;
+        background-size:100% 100%;
+        background-image:url("img/border.png")
+}
+.desktop{
+	background-color:black;
+        width:88vw;
+        height:90vh;
+        position:absolute;
+        left:6vw;
+        top:5vh;
+        display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.button{ 
+        align-items:center; 
+        margin:auto; 
+        justify-content:center; 
+        vertical-align:middle; 
+        display:flex; 
+        width:10vw; 
+        height:2vw; 
+} 
+.loginbox,.topbar,.login,.enter{ 
+} 
+.loginbox{
+	width:50vw;
+       	border-style:solid;
+	border-color:white;
+	border-width:3px;	
+        justify-content:center; 
+        align-items:center; 
+        height:50.5vh; 
+        position:absolute; 
+        background-color:white;
+}
+.topbar{
+	padding:15px;
+        background-color:#8941AD;
+        height:7vh;
+        position:relative;
+
+}
+.type{
+	width:50vw;
+	height:16.5vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	color:white;
+}
+.prompt{
+	padding:5vw;
+}
+.box{
+	width:25vw;
+	border-style:solid;
+	border-color:white;
+	border-width:3px;
+}
+.login{
+	display:block;
+        height:33vh;
+        position:relative;
+        background-color:black;
+}
+.enter{
+        display:flex;
+        height:10vh;
+
+        position:relative;
+        background-color:black;
+}
+#enterbtn{
+	width:40vw;
+	color:black;
+	background-color:white;
+	border-color:#ebe6e3;
+}
+#enterbtn:hover{
+	background-color:#ebe6e3;
+}
+#closebtn{
+	float:right;
+	width:2vw;
+	aspect-ratio:1;
+	background-color:white;
+	color:black;
+	border-color:black;
+}

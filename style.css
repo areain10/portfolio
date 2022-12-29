@@ -5,6 +5,14 @@ body{
 	height:100%;
 	background-color:black;
 }
+.close{
+	float:right;
+	width:2vw;
+	aspect-ratio:1;
+	background-color:white;
+	color:black;
+	border-color:black;
+}
 .border{
 	z-index:-1;
 	width:100vw;
@@ -35,10 +43,15 @@ body{
 	height:50vh;
 	background:black;
 }
+#windows{
+	width:3vw;
+	aspect-ratio:1;
+}
 .headers{
 	width:60vw;
 	height:5vh;
 	cursor:move;
+	padding:10px;
 }
 #about{
 	left:20vw;

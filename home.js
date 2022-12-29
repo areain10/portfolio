@@ -30,43 +30,71 @@ window.addEventListener('DOMContentLoaded',()=>{
         },4000);
 });
 
-document.querySelector("#abouticon").addEventListener("click",()=>{
+function abtToggle(){
+
 	elmnt = document.querySelector("#about")
 	if(elmnt.style.display === "none"){
 		elmnt.style.display="flex";
 	}else{
 		elmnt.style.display="none";
 	};
-});
-document.querySelector("#porticon").addEventListener("click",()=>{
+};
+function portToggle(){
+
 	elmnt = document.querySelector("#port")
 	if(elmnt.style.display === "none"){
 		elmnt.style.display="flex";
 	}else{
 		elmnt.style.display="none";
 	};
-});
-document.querySelector("#serviceicon").addEventListener("click",()=>{
+};
+function servToggle(){
 	elmnt = document.querySelector("#service")
 	if(elmnt.style.display === "none"){
 		elmnt.style.display="flex";
 	}else{
 		elmnt.style.display="none";
 	};
-});
-document.querySelector("#contacticon").addEventListener("click",()=>{
+
+}
+function contToggle(){
 	elmnt = document.querySelector("#contact")
 	if(elmnt.style.display === "none"){
 		elmnt.style.display="flex";
 	}else{
 		elmnt.style.display="none";
 	};
+
+}
+document.querySelector("#abouticon").addEventListener("click",()=>{
+	abtToggle();
+});
+document.querySelector("#porticon").addEventListener("click",()=>{
+	portToggle();
+});
+document.querySelector("#serviceicon").addEventListener("click",()=>{
+	servToggle();
+});
+document.querySelector("#contacticon").addEventListener("click",()=>{
+	contToggle();
+});
+document.querySelector("#abtclose").addEventListener("click",()=>{
+	abtToggle();
+});
+document.querySelector("#prtclose").addEventListener("click",()=>{
+	portToggle();
+});
+document.querySelector("#svclose").addEventListener("click",()=>{
+	servToggle();
+});
+document.querySelector("#ctclose").addEventListener("click",()=>{
+	contToggle();
 });
 
 dragElement(document.querySelector("#about"));
 dragElement(document.querySelector("#port"));
-dragElement(document.querySelector("#sevice"));
-dragElement(document.querySelector("contact"));
+dragElement(document.querySelector("#service"));
+dragElement(document.querySelector("#contact"));
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {

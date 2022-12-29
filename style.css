@@ -5,6 +5,9 @@ body{
 	height:100%;
 	background-color:black;
 }
+h3{
+	font-size:1vmin;
+}
 .close{
 	float:right;
 	width:2vw;
@@ -47,7 +50,16 @@ body{
 	width:3vw;
 	aspect-ratio:1;
 }
+.dark{
+	color:black;
+}
 .headers{
+	border-style:solid;
+	border-width:2px;
+	border-color:white;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
 	width:60vw;
 	height:5vh;
 	cursor:move;

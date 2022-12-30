@@ -1,5 +1,6 @@
 body{
-	color:#ebe6e3;
+	font-family: 'Varela Round', sans-serif;
+	color:#29282d;
 	width:100vw;
 	max-width:100%;
 	height:100%;
@@ -25,10 +26,10 @@ h3{
 	background-image:url("img/border.png")
 }
 .desktop{
-	background-image:url("https://media.giphy.com/media/26n6Eex4vlFwgVaRa/giphy.gif");
+	/*background-image:url("https://media.giphy.com/media/26n6Eex4vlFwgVaRa/giphy.gif");*/
 	background-size:cover;
 	height:100vh;
-	background-color:black;
+	background-color:#222;
 	width:88vw;
 	height:90vh;
 	position:absolute;
@@ -37,26 +38,49 @@ h3{
 	display:block;
 }
 .window{
-	border-style:solid;
-	border-width:2px;
-	border-color:white;
+	align-items:center;
+	flex-direction:column;
+	justify-content:space-between;
+	border-radius:25px;
+	border:2px solid black;
 	display:none;
 	position:absolute;
 	width:60vw;
 	height:50vh;
-	background:black;
+	background:#ebe1d9;
+}
+
+.windowbody{
+	padding:2vmin;
+	width:60vw;
+	height:45vh;
+	display:flex;
+	align-items:center;
+}
+#selfpic{
+	width:20vw;
+	height:50vh;
+}
+#abouttext{
+	font-size:2vmin;
+	width:40vw;
 }
 #windows{
 	width:3vw;
 	aspect-ratio:1;
 }
-.dark{
-	color:black;
+#contact{
+	width:25vw;
+	height:65vh;
+}
+#contactheader{
+	width:25vw;
 }
 .headers{
-	border-style:solid;
+	border-radius:25px 25px 0px 0px;
+	border-color:black;
+	border-style:none solid solid solid;
 	border-width:2px;
-	border-color:white;
 	display:flex;
 	justify-content:space-between;
 	align-items:center;
@@ -64,6 +88,8 @@ h3{
 	height:5vh;
 	cursor:move;
 	padding:10px;
+	background-color:#f5c7f7;
+	color:black;
 }
 #about{
 	left:20vw;
@@ -83,18 +109,18 @@ h3{
 }
 
 #aboutheader{
-	background-color:#8941AD;
+	background-color:#bc6ff1;
 }
 #portheader{
-	background-color:#cc5446;
+	background-color:#f675a8;
 
 }
 #serviceheader{
-	background-color:#fef3d7;
+	background-color:#f29393;
 
 }
 #contactheader{
-	background-color:#ebe6e3;
+	background-color:#ffccb3;
 
 }
 .icon{
@@ -102,8 +128,13 @@ h3{
 	cursor:move;
 }
 .filename{
-	width:5vw;
-	aspect-ratio:3;
+	padding:0.2vmin 0.5vmin;
+	font-size:1vmin;
+	border:2px solid black;
+	border-radius:3px;
+	background:#ebe1d9;
+	/*width:5vw;
+	height:1.5vh;*/
 }
 .row{
 	transform:translate(1vw,0%);
@@ -120,9 +151,64 @@ h3{
 }
 .app{
 	text-align:center;
-	display:block;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
 	width:5vw;
 	aspect-ratio:2/3;
+}
+
+/* Contact Chat */
+.message{
+	display:flex;	
+	width:24vw;
+	height:12vh;
+	border: 2px solid #dedede;
+	background-color:black;
+	border-radius:5px;
+	padding:10px;
+	margin:10px 0;
+	align-items:center;
+}
+.avatar{
+	width:3vw;
+	aspect-ratio:1;
+}
+.user{
+	flex-direction:row-reverse;
+	border-color:#ccc;
+	background-color:#111;
+}
+.text{
+	height:8vh;
+	margin:1vw;
+	width:20vw;
+}
+.time{
+	position:absolute;
+	transform:translate(0%,4vh);
+}
+.title{
+	padding:1vmin 0 0 1vmin;
+}
+.closebtns{
+	border-color:rgba(0,0,0,0);
+	background-color:rgba(0,0,0,0);
+	margin: 0 1vmin 0 0;
+}
+
+#portbody{
+	overflow:auto;
+	display:grid;
+	gap:5vmin;
+	grid-template-columns:auto auto auto;
+}
+.projectthumb{
+	margin:auto;
+	padding:3vmin;
+	height:25vmin;
+	width:20vmin;
+	background-color:purple;
 }
 /* Loading screen */
 .backvid{

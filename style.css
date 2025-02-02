@@ -45,17 +45,32 @@ h3{
 	border:2px solid black;
 	display:none;
 	position:absolute;
-	width:60vw;
-	height:50vh;
+	width:80vw;
+	height:65vh;
 	background:#ebe1d9;
 }
 
 .windowbody{
 	padding:2vmin;
-	width:60vw;
-	height:45vh;
+	width:80vw;
+	height:65vh;
 	display:flex;
 	align-items:center;
+}
+.headers{
+	border-radius:25px 25px 0px 0px;
+	border-color:black;
+	border-style:none solid solid solid;
+	border-width:2px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	width:80vw;
+	height:5vh;
+	cursor:move;
+	padding:10px;
+	background-color:#f5c7f7;
+	color:black;
 }
 #selfpic{
 	width:20vw;
@@ -76,21 +91,7 @@ h3{
 #contactheader{
 	width:25vw;
 }
-.headers{
-	border-radius:25px 25px 0px 0px;
-	border-color:black;
-	border-style:none solid solid solid;
-	border-width:2px;
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	width:60vw;
-	height:5vh;
-	cursor:move;
-	padding:10px;
-	background-color:#f5c7f7;
-	color:black;
-}
+
 #about{
 	left:20vw;
 	top:10vh;
@@ -205,10 +206,16 @@ h3{
 }
 .projectthumb{
 	margin:auto;
-	padding:3vmin;
+	/*padding:3vmin;*/
 	height:25vmin;
-	width:20vmin;
+	width:40vmin;
 	background-color:purple;
+}
+.porttitle{
+	height:25vmin;
+	width:40vmin;
+	max-width:100%;
+	max-height:100%;
 }
 /* Loading screen */
 .backvid{
@@ -276,3 +283,4 @@ h3{
         opacity:0;
         transition: ease-in-out 0.5s;
 }
+
